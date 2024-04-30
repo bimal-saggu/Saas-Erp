@@ -1,0 +1,309 @@
+.adm-act {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.adm-act select {
+  background: #1366d9;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.adm-act button {
+  background: #1366d9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 5px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+}
+
+.add_Proj {
+  width: 300px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #667085;
+  position: fixed; /* Keep the modal fixed */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.add_Sec {
+  padding: 25px;
+}
+
+.add_Head h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 0;
+}
+
+.add_Form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.add_input-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.add_input-field label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #48505e;
+  width: 150px;
+}
+
+.add_input-field input {
+  font-size: 16px;
+  font-weight: 400;
+  color: #858d9d;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  padding: 10px 14px;
+  width: 55%;
+}
+
+.add_input-field input:focus {
+  outline: none;
+}
+
+.disc-btn,
+.add-btn {
+  margin-top: 20px;
+}
+
+.disc-btn button {
+  width: 110px;
+  font-size: 16px;
+  padding: 10px;
+  border: 1px solid #f0f1f3;
+  border-radius: 4px;
+  color: white;
+  background: red;
+}
+
+.add-btn button {
+  width: 110px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #1366d9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.add_Btns {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.add_Btns :hover {
+  cursor: pointer;
+}
+
+/* UPLOAD */
+
+/* .file-input-wrapper {
+  position: relative;
+  display: inline-block;
+} */
+
+/* .file-label {
+  border: 1px solid #777777;
+  padding: 8px 20px;
+} */
+
+.upl_input-field {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.upl_input-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.browse_input {
+  width: 60%;
+  border: 1px solid #777777;
+  height: 38.5px;
+}
+
+.browse_input p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #858d9d;
+  margin: 0;
+  padding: 8px 0 9px 8px;
+}
+
+.browse {
+  /* width: 35%; */
+  background: #dce3e8;
+  color: #595757;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  height: 40px;
+  border: 1px solid #777777;
+  cursor: pointer;
+}
+
+.can-btn {
+  margin-top: 20px;
+}
+
+.can-btn button {
+  width: 110px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #808080;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.xyz {
+  display: none;
+}
+
+/* DASHBOARD */
+/* .dash {
+  background: #f0f1f3;
+} */
+
+.type {
+  display: none;
+}
+
+/* Status Overview */
+
+.stat-det {
+  width: 310px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #667085;
+  position: fixed; /* Keep the modal fixed */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
+
+.stat-sec {
+  padding: 30px;
+}
+
+.stat-head h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}
+
+.stat-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-data-field {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stat-key {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.avail {
+  color: #10a760;
+}
+
+.token {
+  color: #e19133;
+}
+
+.adv {
+  color: #1366d9;
+}
+
+.part {
+  color: #222222;
+}
+
+.block {
+  color: #9c9c9c;
+}
+
+.sold {
+  color: #ef1f1f;
+}
+
+.stat-value {
+  color: #48505e;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+@media screen and (min-width: 1024px) {
+  .adm-act {
+    display: none;
+  }
+  .type {
+    display: flex;
+    gap: 10px;
+    margin-left: 300px;
+    margin-top: 300px;
+  }
+
+  .type-btn button {
+    width: 110px;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #1366d9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+  }
+
+  .type-btn :hover {
+    cursor: pointer;
+  }
+
+  /* Add Project  */
+  .add_Proj {
+    width: 500px;
+  }
+
+  /* Upload */
+  .browse {
+    width: 35%;
+  }
+}

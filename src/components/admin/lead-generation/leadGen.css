@@ -1,0 +1,110 @@
+.export-sec {
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+}
+
+.export {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  border-radius: 5px;
+  border: 1px solid #7a7a7a;
+  background: rgba(217, 217, 217, 0);
+  padding: 10px 16px 10px 10px;
+  width: 80px;
+  cursor: pointer;
+}
+
+.export p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #403b3bcc;
+  margin: 0;
+}
+
+.lead-table-container {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  /* overflow-x: auto; */
+}
+
+.lead-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.lead-table-container tbody tr {
+  border-top: 20px solid #fff;
+}
+
+/* Lead Gen Card */
+
+.lead-det {
+  width: 310px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #667085;
+  position: fixed; /* Keep the modal fixed */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
+
+.lead-sec {
+  padding: 30px;
+}
+
+.lead-head h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}
+
+.lead-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.lead-data-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lead-key {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.lead-value {
+  color: #48505e;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+/* Responsive */
+@media screen and (min-width: 1024px) {
+  .export-sec {
+    margin: 120px 20px 0 0;
+  }
+  .lead-table-container {
+    margin: 40px 20px 20px 300px;
+  }
+  .lead-table-container thead tr {
+    background: #1366d9;
+  }
+  .lead-table-container thead th {
+    color: #fff;
+    font-size: 16px;
+  }
+  .lead-table-container tbody tr {
+    border-top: 20px solid #f0f1f3;
+    /* margin: 20px 0; */
+    /* cursor: pointer; */
+  }
+}

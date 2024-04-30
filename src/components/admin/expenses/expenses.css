@@ -1,0 +1,167 @@
+/* .expense-type {
+  display: flex;
+  justify-content: space-between;
+} */
+.expense-btn-layout {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.expense-type-btn button {
+  background: #1366d9;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  width: 92px;
+}
+
+/* Commission Table */
+
+.com-table-container {
+  margin-top: 30px;
+}
+
+.com-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.com-table-container tbody tr {
+  border-top: 20px solid #fff;
+}
+
+.com-table-container .drop-table-container tr {
+  border: none;
+}
+
+.row-down img {
+  width: 15px;
+  height: 15px;
+  margin-left: 20px;
+}
+
+/* Salary Table */
+
+.salary-table-container {
+  margin-top: 30px;
+}
+
+.salary-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.salary-table-container tbody tr {
+  border-top: 20px solid #fff;
+}
+
+/* Miscellaneous Table */
+
+.miscel-table-container {
+  margin-top: 30px;
+}
+
+.miscel-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.miscel-table-container tbody tr {
+  border-top: 20px solid #fff;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 1024px) {
+  /* Expenses */
+  .expense-type {
+    margin: 120px 0 0 300px;
+    display: flex;
+    justify-content: space-between;
+    /* justify-content: justify-content; */
+  }
+  .expense-btn-layout {
+    justify-content: start;
+    gap: 20px;
+  }
+  .expense-type-btn button {
+    width: 120px;
+  }
+  .expense-type-btn button:hover {
+    cursor: pointer;
+  }
+  .ex-export-sec {
+    margin-right: 20px;
+  }
+
+  /* Commission Table */
+  .com-table-container {
+    margin: 40px 20px 0 300px;
+  }
+  .com-table-container thead tr {
+    background: #1366d9;
+  }
+  .com-table-container thead th {
+    color: #fff;
+    font-size: 16px;
+  }
+  .com-table-container tbody td {
+    font-size: 16px;
+  }
+  .com-table-container tbody tr {
+    border-top: 20px solid #f0f1f3;
+  }
+  .row-down img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  /* Commission drop down */
+  .com-table-container .drop-table-container thead tr {
+    background: none;
+  }
+  .com-table-container .drop-table-container thead th {
+    color: #313131;
+  }
+
+  /* Salary Table */
+  .salary-table-container {
+    margin: 40px 20px 0 300px;
+  }
+  .salary-table-container thead tr {
+    background: #1366d9;
+  }
+  .salary-table-container thead th {
+    color: #fff;
+    font-size: 16px;
+  }
+  .salary-table-container tbody td {
+    font-size: 16px;
+  }
+  .salary-table-container tbody tr {
+    border-top: 20px solid #f0f1f3;
+  }
+
+  /* Miscellaneous Table */
+  .miscel-table-container {
+    margin: 40px 20px 0 300px;
+  }
+  .miscel-table-container thead tr {
+    background: #1366d9;
+  }
+  .miscel-table-container thead th {
+    color: #fff;
+    font-size: 16px;
+  }
+  .miscel-table-container tbody td {
+    font-size: 16px;
+  }
+  .miscel-table-container tbody tr {
+    border-top: 20px solid #f0f1f3;
+  }
+}

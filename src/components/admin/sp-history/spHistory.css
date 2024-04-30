@@ -1,0 +1,175 @@
+.sp-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sp-table-container tbody tr {
+  border-top: 20px solid #fff;
+}
+
+/* SP History Card */
+
+.sp-det {
+  width: 390px;
+  background: white;
+  border-radius: 8px;
+  position: fixed; /* Keep the modal fixed */
+  top: 50%;
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.sp-sec {
+  padding: 25px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.sp-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.logo img {
+  width: 70px;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.sp-head h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #121212;
+  text-align: center;
+}
+
+.sp-data-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.sp-data-field label {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #707070;
+}
+
+.sp-data-field input {
+  font-size: 14px;
+  font-weight: 400;
+  color: #858d9d;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  padding: 5px 5px;
+  margin-bottom: 20px;
+  /* width: 55%; */
+}
+
+.sp-data-field input:focus {
+  outline: none;
+}
+.sp-data-field select {
+  font-size: 14px;
+  font-weight: 400;
+  color: #858d9d;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  padding: 5px 5px;
+  margin-bottom: 20px;
+  /* width: 55%; */
+}
+
+.sp-close {
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+}
+
+.sp-close button {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  background: #989898;
+  padding: 10px 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  /* Table */
+  .cp-export-sec {
+    display: flex;
+    justify-content: end;
+    margin-right: 20px;
+    margin-top: 100px;
+  }
+
+  .cp-export {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    border-radius: 5px;
+    border: 1px solid #7a7a7a;
+    background: rgba(217, 217, 217, 0);
+    padding: 10px 16px 10px 10px;
+    width: 80px;
+  }
+  .cp-export:hover {
+    cursor: pointer;
+  }
+
+  .cp-export p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #403b3bcc;
+    margin: 0;
+  }
+  .sp-table-container {
+    margin: 20px 20px 0 300px;
+  }
+  .sp-table-container thead tr {
+    background: #1366d9;
+  }
+  .sp-table-container thead th {
+    color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .sp-table-container tbody tr {
+    border-top: 20px solid #f0f1f3;
+  }
+  .sp-table-container tbody td {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* History Card */
+  .sp-det {
+    width: 500px;
+  }
+  .sp-data-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .sp-data-field input {
+    margin: 0;
+  }
+  .sp-close button:hover {
+    cursor: pointer;
+  }
+
+  .sp-data-field select {
+    margin: 0;
+    width: 42.5%;
+  }
+}

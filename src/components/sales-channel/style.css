@@ -1,0 +1,122 @@
+.mob-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 20px 0 20px;
+}
+
+.proj-type {
+  display: flex;
+  justify-content: end;
+  margin: 0 20px 0 0;
+}
+
+.select-button {
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: #1366d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.select-button option {
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+}
+
+/* Project Details */
+
+.proj-det {
+  width: 310px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #667085;
+  position: fixed; /* Keep the modal fixed */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.det-sec {
+  padding: 25px;
+}
+
+.close {
+  display: flex;
+  justify-content: end;
+}
+
+.close img {
+  width: 15px;
+  height: 15px;
+}
+
+.close img:hover {
+  cursor: pointer;
+}
+
+.det-head h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}
+
+.data {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+.data-fld {
+  display: flex;
+}
+
+.data-fld p:nth-child(1) {
+  width: 150px;
+}
+
+@media screen and (min-width: 1024px) {
+  .his-det {
+    width: 550px;
+  }
+  .his-det-head h3 {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+  }
+  .his-data-feild label {
+    font-size: 15px;
+    line-height: 20px;
+    width: 300px;
+  }
+  .his-data-feild input {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+/* Sales Dash */
+
+.sales-type {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .mob-nav {
+    display: none;
+  }
+  .proj-type {
+    display: none;
+  }
+  .sales-type {
+    display: flex;
+    gap: 10px;
+    margin-left: 300px;
+    margin-top: 120px;
+  }
+}

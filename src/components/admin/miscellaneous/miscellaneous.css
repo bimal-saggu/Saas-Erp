@@ -1,0 +1,108 @@
+.miscel {
+  width: 310px;
+  border-radius: 20px;
+  background: #fff;
+  position: fixed; /* Keep the modal fixed */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  margin: 10px;
+}
+
+.miscel-sec {
+  padding: 30px;
+}
+
+/* .miscel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.miscel-head h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.miscel-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.miscel-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.miscel-form-field label {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.miscel-form-field input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 10px 15px;
+  outline: none;
+}
+
+.miscel-actions {
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+}
+
+.submit button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 5px;
+  border: 1px solid #cccdce;
+  background: #1366d9;
+  padding: 10px 25px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 1024px) {
+  .miscel {
+    width: 600px;
+    border-radius: 20px;
+    background: #fff;
+    position: fixed; /* Keep the modal fixed */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-30%, -45%);
+    margin: 10px;
+  }
+  .miscel-head h3 {
+    font-size: 24px;
+  }
+  .miscel-form-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .miscel-form-field label {
+    font-size: 20px;
+    width: 120px;
+  }
+  .miscel-form-field input {
+    font-size: 20px;
+    margin: 0;
+    border: 1px solid #000000;
+  }
+}

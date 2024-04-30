@@ -1,0 +1,181 @@
+.payroll {
+  width: 330px;
+  border-radius: 20px;
+  background: #fff;
+  position: fixed; /* Keep the modal fixed */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  margin: 10px;
+}
+
+.manage-payroll {
+  border: 1px solid #667085;
+}
+
+.payroll-sec {
+  padding: 30px;
+}
+
+.payroll-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manage-role {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #7a7a7a;
+  background: rgba(217, 217, 217, 0);
+  padding: 10px;
+  width: 120px;
+  cursor: pointer;
+}
+
+.manage-role p {
+  margin: 0;
+}
+
+.payroll-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.payroll-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.payroll-form-field label {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.payroll-form-field input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 10px 15px;
+  outline: none;
+}
+
+.payroll-form-field select {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  margin-bottom: 1rem;
+  padding: 10px 15px;
+  outline: none;
+  cursor: pointer;
+}
+
+.payroll-actions {
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+}
+
+.submit button {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 5px;
+  border: 1px solid #cccdce;
+  background: #1366d9;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+
+/* Manage Role pop-up  */
+
+.manage-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.manage-input input {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #b4b2b2;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 10px 0 10px 15px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.manage-sbt button {
+  background: #1366d9;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 1024px) {
+  .payroll {
+    width: 500px;
+    transform: translate(-30%, -45%);
+  }
+  .payroll-head h3 {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 40px;
+  }
+  .payroll-form-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0;
+  }
+  .payroll-form-field label {
+    font-size: 20px;
+    width: 120px;
+  }
+  .payroll-form-field select {
+    font-size: 20px;
+    margin: 0;
+    border: 1px solid #000000;
+    width: 65%;
+  }
+  .payroll-form-field input {
+    font-size: 20px;
+    margin: 0;
+    border: 1px solid #000000;
+  }
+  .payroll-form-field input,
+  .payroll-form-field select {
+    margin: 0;
+  }
+  /* Manage Role pop-up */
+  .manage-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}

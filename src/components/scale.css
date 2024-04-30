@@ -1,0 +1,72 @@
+.scale {
+  width: auto;
+  background: white;
+  border-radius: 8px;
+  margin: 20px 20px 20px 300px;
+  /* transform: translateX(5%); */
+}
+
+.scale-sec {
+  padding: 20px 30px;
+}
+
+.scale_Data {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-heading {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+  text-align: center;
+  margin: 0;
+}
+
+.one {
+  color: #10a760;
+}
+
+.two {
+  color: #e19133;
+}
+
+.three {
+  color: #1366d9;
+}
+
+.four {
+  color: #515151;
+}
+
+.five {
+  color: #9c9c9c;
+}
+
+.six {
+  color: #ef1f1f;
+}
+
+.item-count {
+  /* margin-top: 15px; */
+}
+
+.scale_Items span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+  color: #48505e;
+  padding: 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .scale-sec {
+    padding: 20px 40px;
+  }
+  .item-heading {
+    font-size: 20px;
+  }
+  .scale_Items span {
+    font-size: 16px;
+  }
+}

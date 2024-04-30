@@ -1,0 +1,448 @@
+.receipt-type {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 20px;
+}
+
+.receipt-type-btn button {
+  background: #1366d9;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 0;
+  width: 95px;
+}
+
+.receipt-table-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 20px;
+}
+
+.receipt-table-head h3 {
+  color: #383e49;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.receipts-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.receipts-table-container tbody tr {
+  border-top: 20px solid #fff;
+}
+
+.table-headings p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.table-data p {
+  color: #222121;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+/* Pending Receipts Card */
+
+.rec-det {
+  width: 390px;
+  background: white;
+  border-radius: 8px;
+  position: fixed; /* Keep the modal fixed */
+  top: 50%;
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+}
+
+.rec-sec {
+  padding: 25px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.rec-det-head h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #121212;
+  margin-top: 0;
+  text-align: center;
+}
+
+.rec-data-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.rec-data-field label {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #707070;
+}
+
+.rec-data-field input {
+  font-size: 12px;
+  font-weight: 400;
+  color: #858d9d;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  padding: 5px 5px;
+  margin-bottom: 20px;
+  /* width: 55%; */
+}
+
+.rec-data-field input:focus {
+  outline: none;
+}
+
+.rec-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.rec-delete button {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  background: #d73b3b;
+  padding: 10px 20px;
+}
+
+.rec-sec-actions {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.rec-sec-actions button {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  padding: 10px 20px;
+}
+
+.save button {
+  color: #5f5d5d;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  background: rgba(152, 152, 152, 0);
+}
+
+.export-btn button {
+  color: #fff;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  background-color: #1366d9;
+}
+
+.cancel-btn button,
+.validate-btn button {
+  display: none;
+}
+
+.deleted-receipts button {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  border: none;
+  border-radius: 4px;
+  background: #1366d9;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+/* Deleted Receipts Card */
+
+.rec-close {
+  display: flex;
+  justify-content: end;
+  margin-top: 50px;
+}
+
+.rec-close button {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 4px;
+  border: 1px solid #707070;
+  background: #7c7c7c;
+  padding: 5px 20px;
+}
+
+/* Dropdown */
+
+.dropdown {
+}
+
+.drop-sec {
+  /* background: #fff; */
+  height: 100px;
+  padding: 0 20px;
+  overflow-y: scroll;
+}
+
+.drop-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #675b5b;
+}
+
+.drop-head h4 {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin: 0;
+}
+
+.drop-head img {
+  width: 10px;
+  height: 10px;
+}
+
+.dropdown {
+  border: none !important;
+}
+
+.drop-sec,
+.dropdown td,
+.drop-table-container thead tr {
+  background: #d9d9d9;
+}
+
+/* .drop-table-container thead tr {
+  background: none;
+} */
+
+.drop-table-container th {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  border-bottom: 1px solid #675b5b;
+  padding: 0;
+}
+
+.drop-table-container td {
+  color: #000;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  border-bottom: 1px solid #675b5b;
+  padding: 0;
+}
+
+/* Sold Card */
+
+.sold-close button {
+  background: #fff;
+  color: #757575;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+.sold-export button {
+  background: #1366d9;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  border: 1px solid #707070;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+/* Part Payment Select Delete Type  */
+
+.deleted-type {
+  display: flex;
+  justify-content: end;
+  /* margin: 0 20px 0 0; */
+}
+
+.select-deleted-type {
+  font-size: 14px;
+  padding: 10px 20px;
+  background-color: #1366d9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.select-deleted-type option {
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 1024px) {
+  /* Pending Receipts */
+  .receipt-type {
+    justify-content: start;
+    gap: 1rem;
+    margin: 120px 0 0 300px;
+  }
+  .receipt-type button {
+    cursor: pointer;
+  }
+  /* Pending Receipts Table */
+  .deleted-receipts {
+    display: none;
+  }
+  .deleted-receipts button {
+    cursor: pointer;
+  }
+  .receipt-table {
+    margin: 40px 20px 20px 300px;
+  }
+  .receipt-table-head h3 {
+    display: none;
+  }
+  .receipts-table-container {
+    margin: 0 0 0 0;
+  }
+  .receipts-table-container thead tr {
+    background: #1366d9;
+  }
+  .receipts-table-container thead th {
+    color: #fff;
+    font-size: 16px;
+  }
+  .receipts-table-container tbody tr {
+    border-top: 20px solid #f0f1f3;
+  }
+  .receipts-table-container tbody td {
+    font-size: 16px;
+  }
+  .res-del-rec h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #f55959;
+    margin: 60px 20px 0 300px;
+  }
+  /* Part Payment Table */
+  .receipt-table-head {
+    display: flex;
+    justify-content: end;
+  }
+  .receipt-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .receipt-actions img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+  .res-del-rec select {
+    margin: 40px 0 0 300px;
+  }
+  .part-pay-del {
+    margin: 40px 20px 20px 300px;
+  }
+  .select-deleted-type {
+    display: none;
+  }
+  .part-select {
+    font-size: 24px;
+    font-weight: 500;
+    background: #f0f1f3;
+    color: #f55959;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .part-select option {
+    font-size: 24px;
+    font-weight: 500;
+    color: #f55959;
+    /* padding: 10px 5px; */
+  }
+  /* Dropdown */
+  .drop-sec {
+    height: 200px;
+  }
+  .drop-head h4 {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 10px;
+  }
+  .drop-head img {
+    cursor: pointer;
+  }
+  .drop-table-container thead th,
+  .drop-table-container tbody td {
+    padding: 10px 0;
+  }
+  /* Card */
+  .rec-det {
+    width: 500px;
+    z-index: 1;
+  }
+  .rec-data-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .rec-actions button {
+    cursor: pointer;
+  }
+  .cancel-btn button {
+    color: #5f5d5d;
+    border-radius: 4px;
+    border: 1px solid #707070;
+    background: rgba(152, 152, 152, 0);
+  }
+  .validate-btn button {
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid #707070;
+    background-color: #1366d9;
+  }
+  .cancel-btn button,
+  .validate-btn button {
+    display: flex;
+  }
+  .pen-save button,
+  .pen-export button {
+    display: none;
+  }
+  /* Part Payment Card - Deleted part-payment */
+  .rec-close button {
+    cursor: pointer;
+  }
+  /* Sold Deleted Projects Table */
+  .sold-receipts-table-container {
+    margin: 40px 20px 20px 300px;
+  }
+}

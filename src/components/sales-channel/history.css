@@ -1,0 +1,141 @@
+.his-head {
+  margin: 0 0 0 20px;
+}
+
+.his-head h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #383e49;
+}
+
+.his-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.his-table tbody tr {
+  border-top: 20px solid #fff;
+}
+
+/* .his-table-container table th:nth-child(n + 4),
+table td:nth-child(n + 4) {
+  display: none;
+} */
+
+.his-det {
+  width: 390px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #667085;
+  position: fixed; /* Keep the modal fixed */
+  top: 50%;
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.his-sec {
+  padding: 25px;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.his-head h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #121212;
+  text-align: center;
+}
+
+.his-data-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.his-data-field label {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #707070;
+}
+
+.his-data-field input {
+  font-size: 14px;
+  font-weight: 400;
+  color: #858d9d;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  padding: 5px 5px;
+  margin-bottom: 20px;
+  /* width: 55%; */
+}
+
+.his-data-field input:focus {
+  outline: none;
+}
+.his-data-field select {
+  font-size: 14px;
+  font-weight: 400;
+  color: #858d9d;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  padding: 5px 5px;
+  margin-bottom: 20px;
+  /* width: 55%; */
+}
+
+@media screen and (min-width: 1024px) {
+  .his-table {
+    width: auto;
+    margin: 120px 0 0 300px;
+  }
+  .his-table-container {
+    margin-right: 20px;
+  }
+  .his-table-container table th {
+    background: #1366d9;
+    color: #fff;
+  }
+  .his-table-container table th,
+  td {
+    font-size: 16px;
+    fon-weight: 500;
+    line-height: 24px;
+  }
+  .his-table-container tbody tr {
+    border-top: 20px solid #f0f1f3;
+  }
+  /* .his-table-container table th:nth-child(n + 4),
+  table td:nth-child(n + 4) {
+    display: table-cell;
+  } */
+  /* History Card */
+  .his-det {
+    width: 500px;
+    border: none;
+    border-top: 1px solid #667085;
+    border-left: 1px solid #667085;
+    border-bottom: 1px solid #667085;
+  }
+  .his-data-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .his-data-field input {
+    margin: 0;
+  }
+  .his-close button:hover {
+    cursor: pointer;
+  }
+
+  .his-data-field select {
+    margin: 0;
+    width: 42.5%;
+  }
+}

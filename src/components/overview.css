@@ -1,0 +1,156 @@
+.over-det {
+  margin: 0 20px 20px 20px;
+}
+
+.over_Head {
+  display: none;
+}
+
+.over_Data-fld {
+  display: flex;
+  justify-content: space-between;
+}
+
+.over_Data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.over_Data img {
+  width: 24px;
+  height: 24px;
+}
+
+.over_Data p {
+  text-align: center;
+  margin: 0;
+}
+
+.amt-type {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #667085;
+}
+
+.amt {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: #5d6679;
+}
+
+/* Responsive */
+
+.over-det {
+  width: 500px;
+  background: #fff;
+  height: auto;
+  border-radius: 8px;
+  /* margin: 120px 0 0 300px; */
+  position: absolute;
+  left: 40%;
+  top: 120px;
+  /* transform: translateX(-50%, -50%); */
+}
+
+.over-sec {
+  padding: 20px;
+}
+
+.over_Head {
+  display: flex;
+}
+
+.over_Head h3 {
+  margin: 0 0 20px 0;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.over_Data_amt {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 10px;
+}
+
+.amt-type {
+  font-weight: 500;
+}
+
+.amt {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* .over {
+  background: #fff;
+  width: 690px;
+  height: auto;
+  border-radius: 8px;
+  position: absolute;
+  left: 59%;
+  top: 120px;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.over_Head {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #383e49;
+}
+
+.over_Head h3 {
+  position: absolute;
+  margin: 20px 16px;
+}
+
+.over_Data-fld {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.over_Data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 50px 0 50px;
+  padding-bottom: 20px;
+  width: 170px;
+}
+
+.over_Data img {
+  width: 30px;
+  height: 30px;
+}
+
+.over_Data_amt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amt {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #5d6679;
+  margin-right: 8px;
+}
+
+.amt-type {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #667085;
+  margin-left: 8px;
+} */

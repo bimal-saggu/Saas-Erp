@@ -1,0 +1,129 @@
+.board-head h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: center;
+}
+
+.board-form {
+  margin: 40px 20px 0 20px;
+}
+
+.board-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.board-field label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #48505e;
+  width: 70%;
+}
+
+.status {
+  display: flex;
+  gap: 0.5rem;
+  /* max-width: 50%; */
+  /* justify-content: space-between; */
+}
+
+.status label {
+  width: auto;
+}
+
+.board-field .status input {
+  width: 15px;
+}
+
+.board-field .status label {
+  color: #000;
+}
+
+.board-field input {
+  width: 70%;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  padding: 10px 14px 10px 14px;
+}
+
+.board-field input,
+select:focus {
+  outline: none;
+}
+
+.board-field select {
+  width: 77%;
+  border-radius: 8px;
+  border: 1px solid #d0d5dd;
+  padding: 10px 14px 10px 14px;
+}
+
+.board-btns {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+  /* .on-board-container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+  } */
+  .on-board {
+    width: 550px;
+    background: #fff;
+    border-radius: 8px;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -35%);
+    margin-bottom: 80px;
+  }
+  .board-sec {
+    padding: 25px;
+  }
+  .board-head h3 {
+    text-align: left;
+  }
+  .board-form {
+    margin: 40px 0 0 0;
+  }
+  .board-field {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .board-field label {
+    width: 170px;
+  }
+  .board-field #status-label {
+    display: inline-block;
+    width: 170px;
+  }
+  .board-field input {
+    width: 50%;
+  }
+  .board-field select {
+    width: 56%;
+  }
+  .status {
+    display: inline;
+    margin-right: 20px;
+  }
+  .status label {
+    margin-right: 20px;
+  }
+  .board-btns {
+    gap: 1rem;
+  }
+  .board-btns button {
+    cursor: pointer;
+  }
+}
