@@ -70,17 +70,12 @@ const AdminDash = () => {
     <div className="dash">
       <style>
         {`
-                    @media screen and (min-width: 1024px) {
-                        body {
-                          background-color: #f0f1f3;
-                        }
-                    }
-                    .type-btn button {
-                        background-color: ${
-                          selectedButton ? "#9FC2F3" : "#1366d9"
-                        };
-                    }
-                `}
+          .type-btn button {
+            color: ${
+              selectedButton ? "#585454" : "rgba(255, 255, 255, 0.96)"
+            };
+          }
+        `}
       </style>
       <div className="mob-nav">
         <a href="/">
@@ -121,8 +116,8 @@ const AdminDash = () => {
           <div className="type-btn">
             <button
               style={{
-                backgroundColor:
-                  selectedButton === "APARTMENT" ? "#1366d9" : "",
+                color:
+                  selectedButton === "APARTMENT" ? "rgba(255, 255, 255, 0.96)" : "",
               }}
               onClick={() => handleButtonClick("APARTMENT")}
             >
@@ -132,7 +127,7 @@ const AdminDash = () => {
           <div className="type-btn">
             <button
               style={{
-                backgroundColor: selectedButton === "VILLA" ? "#1366d9" : "",
+                color: selectedButton === "VILLA" ? "rgba(255, 255, 255, 0.96)" : "",
               }}
               onClick={() => handleButtonClick("VILLA")}
             >
@@ -142,7 +137,7 @@ const AdminDash = () => {
           <div className="type-btn">
             <button
               style={{
-                backgroundColor: selectedButton === "PLOT" ? "#1366d9" : "",
+                color: selectedButton === "PLOT" ? "rgba(255, 255, 255, 0.96)" : "",
               }}
               onClick={() => handleButtonClick("PLOT")}
             >
@@ -152,8 +147,8 @@ const AdminDash = () => {
           <div className="type-btn">
             <button
               style={{
-                backgroundColor:
-                  selectedButton === "FARM_LAND" ? "#1366d9" : "",
+                color:
+                  selectedButton === "FARM_LAND" ? "rgba(255, 255, 255, 0.96)" : "",
               }}
               onClick={() => handleButtonClick("FARM_LAND")}
             >

@@ -72,34 +72,32 @@ tr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 20px 20px 0 20px;
+  margin: 40px 90px 0 90px;
 }
 
-.pagination button {
-  width: 110px;
-  font-size: 14px;
-  padding: 10px;
-  color: #48505e;
-  border: 1px solid #d0d3d9;
-  background: #fff;
-  border-radius: 4px;
-}
-
-.pagination :hover {
+.pagination img:hover {
   cursor: pointer;
 }
 
 .pagination span {
   font-size: 14px;
-  font-weight: 400;
   line-height: 20px;
-  color: #48505e;
+  color: #fff;
+  font-weight: 500;
+  cursor: auto;
 }
 
 @media screen and (min-width: 1024px) {
   .table {
-    background: white;
-    border-radius: 8px;
+    border-radius: 9.993px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.21) 0%,
+        rgba(0, 0, 0, 0.21) 100%
+      ),
+      rgba(214, 214, 214, 0.01);
+    background-blend-mode: luminosity, color-burn;
+    box-shadow: 0.5px 0px 0px 0px rgba(84, 84, 88, 0.65);
     margin: 20px 20px 20px 300px;
   }
 
@@ -113,10 +111,12 @@ tr {
     align-items: center;
   }
 
-  .table_Head h3 {
-    font-size: 20px;
-    font-weight: 500;
+  .table_Head h1 {
+    /* font-family: "Poppins"; */
+    font-size: 24px;
+    font-weight: 400;
     line-height: 30px;
+    color: rgba(255, 255, 255, 0.96);
   }
 
   .table-container table {
@@ -129,16 +129,27 @@ tr {
   }
 
   tbody td {
-    /* height: 37px; */
-    background: #fff;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.08) 0%,
+        rgba(0, 0, 0, 0.08) 100%
+      ),
+      rgba(214, 214, 214, 0.45);
+    background-blend-mode: luminosity, color-burn;
   }
 
   thead tr {
-    background: #fff;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.08) 0%,
+        rgba(0, 0, 0, 0.08) 100%
+      ),
+      rgba(214, 214, 214, 0.45);
+    background-blend-mode: luminosity, color-burn;
   }
 
   thead th {
-    color: #222121;
+    color: #fff;
   }
 
   th,
@@ -149,7 +160,7 @@ tr {
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
-    color: #48505e;
+    color: #fff;
   }
 
   tr {
@@ -158,7 +169,7 @@ tr {
 
   .table-container table tbody tr,
   th {
-    border-bottom: 1px solid #d0d3d9;
+    border-bottom: 1px solid #fff;
   }
 
   .actions {
@@ -199,15 +210,6 @@ tr {
     margin-top: 50px;
   }
 
-  .pagination button {
-    width: 110px;
-    font-size: 14px;
-    padding: 10px;
-    color: #48505e;
-    border: 1px solid #d0d3d9;
-    background: #fff;
-    border-radius: 4px;
-  }
 
   .pagination :hover {
     cursor: pointer;

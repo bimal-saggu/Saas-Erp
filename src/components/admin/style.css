@@ -193,9 +193,12 @@
 }
 
 /* DASHBOARD */
-/* .dash {
-  background: #f0f1f3;
-} */
+.dash {
+  border: 0.999px solid rgba(255, 255, 255, 0.4);
+  background: rgba(77, 72, 72, 0.4);
+  background-blend-mode: luminosity;
+  backdrop-filter: blur(49.96410369873047px);
+}
 
 .type {
   display: none;
@@ -287,10 +290,16 @@
     width: 110px;
     font-size: 14px;
     padding: 10px;
-    background-color: #1366d9;
-    color: #fff;
+    border-radius: 5px;
     border: none;
-    border-radius: 4px;
+    border-bottom: 0.999px solid rgba(255, 255, 255, 0.07);
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.08) 0%,
+        rgba(0, 0, 0, 0.08) 100%
+      ),
+      rgba(214, 214, 214, 0.45);
+    background-blend-mode: luminosity, color-burn;
   }
 
   .type-btn :hover {

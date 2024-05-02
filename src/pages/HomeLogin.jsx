@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import "../../src/index.css";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEye } from "react-icons/fa";
 import { FaEyeSlash } from "react-icons/fa";
 import {CircularProgress} from '@mui/material'
 import toast from "react-hot-toast";
+import LoginArrow from "../assets/images/saasLoginArrow.svg";
 
 const HomeLogin = () => {
   const [loading, setLoading] = useState(false);
@@ -80,73 +82,87 @@ const HomeLogin = () => {
   };
 
   return (
-    <div className="log">
-      <div className="log__Title">
-        <h3>Log in to your account</h3>
-        <p>Welcome back! Please enter your details</p>
-      </div>
-      <div className="log__Form">
-        <form onSubmit={handleSubmit}>
-          <div className="form_input-field">
-            <label htmlFor="email" className="form-label">
-              Email
-            </label>
-            <input
-              type="email"
-              id="email"
-              placeholder="Enter your email"
-              value={formData.email}
-              onChange={onChangeInput}
-              name="email"
-            />
+    <div className="home">
+      <div className="log">
+        <div className="log-sec">
+          <div className="log-head">
+            <h2>Log in to your account</h2>
+            <p>Welcome back! Please enter your details</p>
           </div>
-          <div className="form_input-field">
-            <label htmlFor="password" className="form-label">
-              Password
-            </label>
-            <input
-              type={passwordVisible ? "text" : "password"}
-              id="password"
-              value={formData.password}
-              onChange={onChangeInput}
-              name="password"
-              autoComplete="on"
-              placeholder="Enter password"
-            />
-            <button className="btn-hide" type="button" onClick={togglePasswordVisibility}>
-              {passwordVisible ?
-                (
-                  <FaEyeSlash />
-                ) :
-                (
-                  <FaEye />
-                )
-              }
-            </button>
+          <div className="log-form">
+            <form onSubmit={handleSubmit}>
+              <div className="form_input-field">
+                <label htmlFor="email" className="form-label">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  value={formData.email}
+                  onChange={onChangeInput}
+                  name="email"
+                />
+              </div>
+              <div className="form_input-field">
+                <label htmlFor="password" className="form-label">
+                  Password
+                </label>
+                <input
+                  type={passwordVisible ? "text" : "password"}
+                  id="password"
+                  value={formData.password}
+                  onChange={onChangeInput}
+                  name="password"
+                  autoComplete="on"
+                  placeholder="Enter password"
+                />
+                <button className="btn-hide" type="button" onClick={togglePasswordVisibility}>
+                  {passwordVisible ?
+                    (
+                      <FaEyeSlash color="#9B9A9A" />
+                    ) :
+                    (
+                      <FaEye color="#9B9A9A" />
+                    )
+                  }
+                </button>
+              </div>
+              <div className="form_check">
+                {/* <div>
+                  <input
+                    type="checkbox"
+                    onChange={onChangeInput}
+                    checked={formData.rememberMe}
+                    name="rememberMe"
+                  />
+                  <span className="rem">Remember me for 30 days</span>
+                </div> */}
+                <div className="forget-sec">
+                  <span className="frgt">Forgot password?</span>
+                </div>
+              </div>
+              <div className="sbt_btn">
+                <button type="submit">{loading ? (<CircularProgress size={15} color="inherit" />) : (
+                  <div className="submit-btn">
+                    <p>Sign In</p>
+                    <img src={LoginArrow} alt="Login Arrow" />
+                  </div>)}
+                </button>
+              </div>
+              <div className="form_sign-up">
+                <span>
+                  Don't have an account? <Link to="/signup">Sign up</Link>
+                </span>
+              </div>
+            </form>
           </div>
-          <div className="form_check">
-            <div>
-              <input
-                type="checkbox"
-                onChange={onChangeInput}
-                checked={formData.rememberMe}
-                name="rememberMe"
-              />
-              <span className="rem">Remember me for 30 days</span>
-            </div>
-            <div>
-              <span className="frgt">Forgot password?</span>
-            </div>
-          </div>
-          <div className="sbt_btn">
-            <button type="submit">{loading ? (<CircularProgress size={15} color="inherit" />) : ("Sign in")}</button>
-          </div>
-          <div className="form_sign-up">
-            <span>
-              Don't have an account? <Link to="/signup">Sign up</Link>
-            </span>
-          </div>
-        </form>
+        </div>
+        {/* <div className="log__Title">
+          <h3>Log in to your account</h3>
+          <p>Welcome back! Please enter your details</p>
+        </div>
+         */}
       </div>
     </div>
   );

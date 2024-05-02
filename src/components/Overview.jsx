@@ -36,9 +36,6 @@ const Overview = () => {
   return (
     <div className="over-det">
       <div className="over-sec">
-        <div className="over_Head">
-          <h3>Overview</h3>
-        </div>
         <div className="over_Data-fld">
           {loading ? (
             <p>Loading...</p>

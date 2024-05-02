@@ -10,6 +10,8 @@ import { saveAs } from "file-saver";
 import { pdf } from "@react-pdf/renderer";
 import PdfGenerator from "./PdfGenerator";
 import toast from "react-hot-toast";
+import PrevArrow from "../assets/images/paginationPrevArrow.svg";;
+import NextArrow from "../assets/images/paginationNextArrow.svg";;
 
 const Table = ({ selectedButton, url }) => {
   const { setLoader, loader } = useContext(sharedContext);
@@ -180,17 +182,17 @@ const Table = ({ selectedButton, url }) => {
   const getStatusColor = (status) => {
     switch (status) {
       case "AVAILABLE":
-        return "#10A760";
+        return "#42FFA6";
       case "SOLD":
-        return "#FF0000";
+        return "#FF4E42";
       case "TOKEN":
-        return "#E19133";
+        return "#E1F853";
       case "ADVANCE":
-        return "#3D4DD6";
+        return "#FFB03A";
       case "BLOCK":
-        return "#9C9C9C";
+        return "#696969";
       case "PART PAYMENT":
-        return "#515151";
+        return "#3F8CFF";
       default:
         return "";
     }
@@ -285,18 +287,11 @@ const Table = ({ selectedButton, url }) => {
         </div>) : loader == false ? ("No data to show") :
         ("")}
         <div className="pagination">
-          <button onClick={handlePreviousPage} disabled={currentPage === 1}>
-            Previous
-          </button>
+          <img src={PrevArrow} alt="Previous arrow button" onClick={handlePreviousPage} disabled={currentPage === 1} />
           <span>
             Page {currentPage} of {Math.ceil(projects?.length / maxRowsPerPage)}
           </span>
-          <button
-            onClick={handleNextPage}
-            disabled={endIndex >= projects?.length}
-          >
-            Next
-          </button>
+          <img src={NextArrow} alt="Next arrow button" onClick={handleNextPage} disabled={endIndex >= projects?.length} />
         </div>
       </div>
       {showAddProjectForm && (

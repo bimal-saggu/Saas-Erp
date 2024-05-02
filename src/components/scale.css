@@ -1,9 +1,15 @@
 .scale {
   width: auto;
-  background: white;
-  border-radius: 8px;
   margin: 20px 20px 20px 300px;
-  /* transform: translateX(5%); */
+  border-radius: 0px 0px 18px 18px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.21) 0%,
+      rgba(0, 0, 0, 0.21) 100%
+    ),
+    rgba(214, 214, 214, 0.01);
+  background-blend-mode: luminosity, color-burn;
+  box-shadow: 0.49px 0px 0px 0px rgba(84, 84, 88, 0.65);
 }
 
 .scale-sec {
@@ -21,34 +27,22 @@
   line-height: 36px;
   text-align: center;
   margin: 0;
-}
-
-.one {
-  color: #10a760;
-}
-
-.two {
-  color: #e19133;
-}
-
-.three {
-  color: #1366d9;
-}
-
-.four {
-  color: #515151;
-}
-
-.five {
-  color: #9c9c9c;
-}
-
-.six {
-  color: #ef1f1f;
+  color: #fff;
 }
 
 .item-count {
   /* margin-top: 15px; */
+}
+
+.scale_Items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scale_Items img {
+  width: 20px;
+  height: 20px;
 }
 
 .scale_Items span {

@@ -6,27 +6,43 @@ body {
   margin: 0;
   padding: 0;
   /* background-color: #f0f1f3; */
+  background: url("../src/assets/images/saasBackground.png") lightgray 50% /
+    cover no-repeat;
+}
+
+.home {
+  height: 100vh;
+  background: url("../src/assets/images/LexHome.jpg") lightgray 50% / cover
+    no-repeat;
 }
 
 .log {
-  width: 85%;
+  width: 450px;
+  border-radius: 29px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background: rgba(128, 128, 128, 0.4);
+  background-blend-mode: luminosity;
+  backdrop-filter: blur(50px);
   display: flex;
   flex-direction: column;
   gap: 5rem;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
+}
+
+.log-sec {
+  padding: 35px;
 }
 
 .btn-hide {
   background: transparent;
   border: none;
-  padding: 0;
-  margin-right: 10px;
+  margin-right: 45px;
   position: absolute;
   right: 0;
-  bottom: 289px;
+  bottom: 260.5px;
   cursor: pointer;
 }
 
@@ -56,22 +72,26 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.log__Title h3 {
+.log-head h2 {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.96);
   line-height: 38px;
   letter-spacing: 0em;
   margin-bottom: 0;
   text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
-.log__Title p {
-  font-size: 16px;
+.log-head p {
+  font-size: 14px;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
-  color: #667085;
+  color: #fff;
+  margin-bottom: 50px;
 }
 
 .form_input-field {
@@ -81,10 +101,31 @@ body {
   margin-bottom: 20px;
 }
 
+.form_input-field label {
+  color: rgba(255, 255, 255, 0.96);
+  /* font-family: Poppins; */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 27.542px;
+  margin-left: 10px;
+}
+
 .form_input-field input {
-  border-radius: 8px;
-  border: 1px solid #d0d5dd;
-  padding: 10px 14px 10px 14px;
+  border: none;
+  padding: 15px 20px 15px 20px;
+  border-radius: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.21) 0%,
+      rgba(0, 0, 0, 0.21) 100%
+    ),
+    rgba(214, 214, 214, 0.01);
+  background-blend-mode: luminosity, color-burn;
+  color: rgba(158, 158, 158, 0.96);
+  /* font-family: Poppins; */
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .form_input-field input,
@@ -98,7 +139,7 @@ select:focus {
   padding: 10px 14px 10px 14px;
 }
 
-.form_check {
+/* .form_check {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -107,6 +148,11 @@ select:focus {
 .form_check input {
   width: 12px;
   height: 12px;
+} */
+
+.forget-sec {
+  display: flex;
+  justify-content: end;
 }
 
 .form-label,
@@ -116,10 +162,12 @@ select:focus {
 
 .frgt {
   font-size: 14px;
-  font-weight: 500;
   line-height: 20px;
   letter-spacing: 0em;
-  color: #1366d9;
+  color: rgba(255, 255, 255, 0.96);
+  /* font-family: Poppins; */
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .frgt:hover {
@@ -127,24 +175,47 @@ select:focus {
 }
 
 .sbt_btn {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 .sbt_btn button {
-  width: 100%;
+  width: 50%;
+  padding: 15px;
+  color: rgba(158, 158, 158, 0.96);
+  /* font-family: Poppins; */
   font-size: 16px;
-  padding: 10px;
-  background-color: #1366d9;
+  font-weight: 400;
   color: #fff;
   border: none;
-  border-radius: 4px;
-}
-.sbt_btn :hover {
+  border-radius: 9px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.21) 0%,
+      rgba(0, 0, 0, 0.21) 100%
+    ),
+    rgba(214, 214, 214, 0.045);
+  background-blend-mode: luminosity, color-burn;
   cursor: pointer;
 }
 
+.submit-btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.submit-btn p {
+  color: rgba(158, 158, 158, 0.96);
+  /* font-family: Poppins; */
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+
 .form_sign-up {
-  margin-top: 5rem;
-  margin-bottom: 5rem;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -152,14 +223,16 @@ select:focus {
   font-size: 14px;
   font-weight: 400px;
   line-height: 20px;
+  color: #d9d9d9;
 }
 
 .form_sign-up a {
   font-weight: 500;
   line-height: 20px;
   letter-spacing: 0em;
-  color: #1366d9;
   text-decoration: none;
+  color: #fff;
+  font-size: 14px;
 }
 
 /* Nav Bar */
@@ -191,7 +264,7 @@ select:focus {
   }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (max-width: 550px) {
   .log {
     width: 360px;
   }
