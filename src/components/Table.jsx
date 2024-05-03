@@ -1,28 +1,16 @@
 import React, { useContext, useEffect, useState } from "react";
 import "./table.css";
-import AddProject from "./admin/AddProject";
 import ProjectDetails from "./sales-channel/ProjectDetails";
-import UploadForm from "./admin/UploadForm";
 import sharedContext from "../context/SharedContext";
 import Loader from "./Loader";
-import JSZip from "jszip";
-import { saveAs } from "file-saver";
-import { pdf } from "@react-pdf/renderer";
-import PdfGenerator from "./PdfGenerator";
-import toast from "react-hot-toast";
 import PrevArrow from "../assets/images/paginationPrevArrow.svg";;
 import NextArrow from "../assets/images/paginationNextArrow.svg";;
 
 const Table = ({ selectedButton, url }) => {
-  const { setLoader, loader } = useContext(sharedContext);
-  const [projects, setProjects] = useState([]);
+  const { setLoader, loader, projects, setProjects } = useContext(sharedContext);
   const [currentPage, setCurrentPage] = useState(1);
-  const [showAddProjectForm, setShowAddProjectForm] = useState(false);
-  const [showUploadForm, setShowUploadForm] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   const [showProjectDetails, setShowProjectDetails] = useState(false);
-  const [buttonText, setButtonText] = useState("Download");
-  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
   const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
 
   const maxRowsPerPage = 10;
@@ -85,22 +73,6 @@ const Table = ({ selectedButton, url }) => {
     };
   }, []);
 
-  const handleAddProject = () => {
-    setShowAddProjectForm(true);
-  };
-
-  const handleCloseProject = () => {
-    setShowAddProjectForm(false);
-  };
-
-  const handleUpload = () => {
-    setShowUploadForm(true);
-  };
-
-  const handleCloseUpload = () => {
-    setShowUploadForm(false);
-  };
-
   const handleCellClick = (project) => {
     setSelectedProject(project);
     setShowProjectDetails(true);
@@ -109,50 +81,6 @@ const Table = ({ selectedButton, url }) => {
   const handleCloseProjectDetails = () => {
     setShowProjectDetails(false);
   };
-  // const handleButtonClick = (type) => {
-  //   setSelectedButton(type);
-  // };
-
-  // Code to download table data PDF
-  const downloadPdf = async (projectData) => {
-    try {
-      setButtonText('Downloading...');
-      setIsButtonDisabled(true);
-
-      const zip = new JSZip();
-      const mainFolder = zip.folder("Projects");
-
-      // Filter projects based on selected project type
-      const filteredProjects = projectData.filter(project => project.project_type === selectedButton.toUpperCase());
-
-      // Iterate over filtered projects
-      for (const project of filteredProjects) {
-        // Generate PDF for the project
-        const doc = (
-          <PdfGenerator projects={filteredProjects} projectType={selectedButton} />
-        ); // Implement this function to generate PDF for each project
-        const asPdf = pdf([]);
-        asPdf.updateContainer(doc);
-        const blob = await asPdf.toBlob();
-
-        // Save PDF in project folder
-        mainFolder.file(`${selectedButton}_DATA.pdf`, blob, { binary: true });
-      }
-
-      // Generate ZIP file and trigger download
-      const zipBlob = await zip.generateAsync({ type: "blob" });
-      saveAs(zipBlob, "projects.zip");
-      toast.success("Download successful");
-
-      setButtonText("Download");
-      setIsButtonDisabled(false);
-    } catch (error) {
-      console.error("An error occurred while generating the PDF/ZIP:", error);
-      toast.error("Download failed");
-      setButtonText("Download");
-      setIsButtonDisabled(false);
-    }
-  }
 
   const renderColumns = () => {
     switch (selectedButton) {
@@ -216,7 +144,7 @@ const Table = ({ selectedButton, url }) => {
       <div className="table_Sec">
         <div className="table_Head">
           <h1>Projects</h1>
-          {(roleType === "SUPER ADMIN" || roleType === "MANAGER") && <div className="actions">
+          {/* {(roleType === "SUPER ADMIN" || roleType === "MANAGER") && <div className="actions">
             <button onClick={handleAddProject}>Add Project</button>
             <div className="actions file-actions">
               <div>
@@ -226,7 +154,7 @@ const Table = ({ selectedButton, url }) => {
                 <button onClick={() => downloadPdf(projects)}>{buttonText}</button>
               </div>
             </div>
-          </div>}
+          </div>} */}
         </div>
         {displayedProjects.length !== 0 ? (
         <div className="table-container">
@@ -294,13 +222,6 @@ const Table = ({ selectedButton, url }) => {
           <img src={NextArrow} alt="Next arrow button" onClick={handleNextPage} disabled={endIndex >= projects?.length} />
         </div>
       </div>
-      {showAddProjectForm && (
-        <AddProject
-          selectedType={selectedButton}
-          onClose={handleCloseProject}
-        />
-      )}
-      {showUploadForm && <UploadForm selectedType={selectedButton} onClose={handleCloseUpload} />}
       {showProjectDetails && (
         <ProjectDetails
           project={selectedProject}

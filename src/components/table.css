@@ -36,18 +36,17 @@
   display: none;
 } */
 
-tbody td {
-  /* height: 37px; */
+/* tbody td {
   background: #f2f2f2;
-}
+} */
 
 .actions button {
   display: none;
 }
 
-thead tr {
+/* thead tr {
   background: #1366d9;
-}
+} */
 
 thead th {
   color: #fff;
@@ -98,7 +97,7 @@ tr {
       rgba(214, 214, 214, 0.01);
     background-blend-mode: luminosity, color-burn;
     box-shadow: 0.5px 0px 0px 0px rgba(84, 84, 88, 0.65);
-    margin: 20px 20px 20px 300px;
+    margin: 20px 40px 20px 270px;
   }
 
   .table_Sec {
@@ -117,6 +116,7 @@ tr {
     font-weight: 400;
     line-height: 30px;
     color: rgba(255, 255, 255, 0.96);
+    margin-bottom: 30px;
   }
 
   .table-container table {
@@ -128,25 +128,16 @@ tr {
     border-top: none;
   }
 
-  tbody td {
-    background: linear-gradient(
-        0deg,
-        rgba(0, 0, 0, 0.08) 0%,
-        rgba(0, 0, 0, 0.08) 100%
-      ),
-      rgba(214, 214, 214, 0.45);
-    background-blend-mode: luminosity, color-burn;
-  }
-
+  /* tbody td,
   thead tr {
     background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.08) 0%,
-        rgba(0, 0, 0, 0.08) 100%
+        rgba(0, 0, 0, 0.21) 0%,
+        rgba(0, 0, 0, 0.21) 100%
       ),
-      rgba(214, 214, 214, 0.45);
+      rgba(214, 214, 214, 0.01);
     background-blend-mode: luminosity, color-burn;
-  }
+  } */
 
   thead th {
     color: #fff;
@@ -167,9 +158,8 @@ tr {
     text-align: center;
   }
 
-  .table-container table tbody tr,
-  th {
-    border-bottom: 1px solid #fff;
+  .table-container table tbody tr {
+    border-top: 1px solid #fff;
   }
 
   .actions {

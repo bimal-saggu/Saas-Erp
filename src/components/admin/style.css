@@ -279,31 +279,54 @@
   .adm-act {
     display: none;
   }
+  .dash-button-sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 270px;
+    margin-top: 260px;
+    margin-right: 40px;
+  }
   .type {
     display: flex;
-    gap: 10px;
-    margin-left: 300px;
-    margin-top: 300px;
+    gap: 20px;
   }
 
   .type-btn button {
     width: 110px;
     font-size: 14px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 5px;
     border: none;
     border-bottom: 0.999px solid rgba(255, 255, 255, 0.07);
     background: linear-gradient(
         0deg,
-        rgba(0, 0, 0, 0.08) 0%,
-        rgba(0, 0, 0, 0.08) 100%
+        rgba(0, 0, 0, 0.21) 0%,
+        rgba(0, 0, 0, 0.21) 100%
       ),
-      rgba(214, 214, 214, 0.45);
+      rgba(214, 214, 214, 0.01);
     background-blend-mode: luminosity, color-burn;
   }
 
   .type-btn :hover {
     cursor: pointer;
+  }
+
+  .dash-actions {
+    display: flex;
+    gap: 60px;
+  }
+  .action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  .action p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21.984px; /* 129.412% */
   }
 
   /* Add Project  */

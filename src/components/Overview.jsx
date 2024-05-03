@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "./overview.css";
-import income from "../assets/income.svg";
-import balanceImage from "../assets/balance.svg";
-import expenses from "../assets/expenses.svg";
+import income from "../assets/images/overviewIncome.svg";
+import balanceImage from "../assets/images/overviewBalance.svg";
+import expenses from "../assets/images/overviewExpenses.svg";
 
 const Overview = () => {
   const [data, setData] = useState(null);
@@ -38,21 +38,21 @@ const Overview = () => {
       <div className="over-sec">
         <div className="over_Data-fld">
           {loading ? (
-            <p>Loading...</p>
+            <p style={{color: "#fff"}}>Loading...</p>
           ) : data ? (
             <>
-              <div className="over_Data">
-                <img src={income} alt="Income" />
-                <div className="over_Data_amt">
-                  <p className="amt-type">Income</p>
-                  <p className="amt">${data?.leads.income}</p>
-                </div>
-              </div>
               <div className="over_Data">
                 <img src={expenses} alt="Expenses" />
                 <div className="over_Data_amt">
                   <p className="amt-type">Expenses</p>
                   <p className="amt">${data?.leads.expenses}</p>
+                </div>
+              </div>
+              <div className="over_Data">
+                <img src={income} alt="Income" />
+                <div className="over_Data_amt">
+                  <p className="amt-type">Income</p>
+                  <p className="amt">${data?.leads.income}</p>
                 </div>
               </div>
               <div className="over_Data">

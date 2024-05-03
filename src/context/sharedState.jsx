@@ -4,6 +4,7 @@ import SharedContext from "./SharedContext";
 const SharedState = (props) => {
   const [loader, setLoader] = useState(false);
   const [deletedReceiptsData, setDeletedReceiptsData] = useState([]);
+  const [projects, setProjects] = useState([]);
 
   return (
     <SharedContext.Provider
@@ -12,6 +13,8 @@ const SharedState = (props) => {
         setLoader,
         deletedReceiptsData,
         setDeletedReceiptsData,
+        projects,
+        setProjects
       }}
     >
       {props.children}
