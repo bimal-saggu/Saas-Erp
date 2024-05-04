@@ -15,16 +15,11 @@ const Pending = () => {
     };
 
   return (
-    <div>
+    <div className="approv">
         <style>
             {`
-                @media screen and (min-width: 1024px) {
-                    body {
-                      background: #f0f1f3;
-                    }
-                }
                 .approval-type-btn button {
-                    background-color: ${selectedStatus ? '#9FC2F3' : '#1366d9'};
+                    color: ${selectedStatus ? '#585454' : 'rgba(255, 255, 255, 0.96)'};
                 }
             `}
         </style>
@@ -34,13 +29,13 @@ const Pending = () => {
             </div >
             <div className="approval-type">
                 <div className="approval-type-btn">
-                    <button style={{ backgroundColor: selectedStatus === 'Pending' ?  '#1366d9': '' }} onClick={() => setSelectedStatus('Pending')}>Pending Approvals</button>
+                    <button style={{ color: selectedStatus === 'Pending' ?  'rgba(255, 255, 255, 0.96)': '' }} onClick={() => setSelectedStatus('Pending')}>Pending Approvals</button>
                 </div>
                 <div className="approval-type-btn">
-                    <button style={{ backgroundColor: selectedStatus === 'Approved' ?  '#1366d9': '' }} onClick={() => setSelectedStatus('Approved')}>Approved</button>
+                    <button style={{ color: selectedStatus === 'Approved' ?  'rgba(255, 255, 255, 0.96)': '' }} onClick={() => setSelectedStatus('Approved')}>Approved</button>
                 </div>
                 <div className="approval-type-btn">
-                    <button style={{ backgroundColor: selectedStatus === 'Rejected' ?  '#1366d9': '' }} onClick={() => setSelectedStatus('Rejected')}>Rejected</button>
+                    <button style={{ color: selectedStatus === 'Rejected' ?  'rgba(255, 255, 255, 0.96)': '' }} onClick={() => setSelectedStatus('Rejected')}>Rejected</button>
                 </div>
             </div>
             <NavBar />

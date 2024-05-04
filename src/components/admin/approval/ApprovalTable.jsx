@@ -184,13 +184,13 @@ const ApprovalTable = ({ selectedStatus }) => {
                               handleRoleChange(approv.user_id, e.target.value)
                             }
                           >
-                            <option value={approv.role_type}>
+                            <option className="opt" value={approv.role_type}>
                               {approv.role_type}
                             </option>
                             {roles
                               .filter((role) => role !== approv.role_type) // Exclude the current role_type from the options
                               .map((role, index) => (
-                                <option key={index} value={role}>
+                                <option className="opt" key={index} value={role}>
                                   {role}
                                 </option>
                               ))}

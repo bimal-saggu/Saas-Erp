@@ -1,3 +1,11 @@
+.approv {
+  border: 0.999px solid rgba(255, 255, 255, 0.4);
+  background: rgba(77, 72, 72, 0.4);
+  background-blend-mode: luminosity;
+  backdrop-filter: blur(49.96410369873047px);
+  height: 100vh;
+}
+
 .approval-type {
   display: flex;
   justify-content: space-between;
@@ -5,14 +13,21 @@
 }
 
 .approval-type-btn button {
-  background: #1366d9;
+  background: #585454;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  border-radius: 5px;
-  border: none;
+  border-radius: 6px;
+  border: 1px solid #fff;
   padding: 10px 15px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.21) 0%,
+      rgba(0, 0, 0, 0.21) 100%
+    ),
+    rgba(214, 214, 214, 0.01);
+  background-blend-mode: luminosity, color-burn;
 }
 
 .approval-head {
@@ -25,9 +40,9 @@
   margin: 20px 0;
 }
 
-.approval-table-container tbody tr {
+/* .approval-table-container tbody tr {
   border-top: 20px solid #fff;
-}
+} */
 
 /* Pending Approval Card */
 
@@ -140,14 +155,43 @@ select {
     margin: 40px 20px 20px 300px;
   }
   .approval-table-container thead tr {
-    background: #1366d9;
+    border-radius: 8px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.21) 0%,
+        rgba(0, 0, 0, 0.21) 100%
+      ),
+      rgba(214, 214, 214, 0.01);
+    background-blend-mode: luminosity, color-burn;
+    box-shadow: 0.49px 0px 0px 0px rgba(84, 84, 88, 0.65);
   }
   .approval-table-container thead th {
     color: #fff;
     font-size: 16px;
+    padding: 25px;
   }
   .approval-table-container tbody tr {
-    border-top: 20px solid #f0f1f3;
+    border-radius: 0px 8px 8px 0px;
+    background: rgba(255, 255, 255, 0.15);
+    background-blend-mode: luminosity;
+    box-shadow: 0.49px 0px 0px 0px rgba(84, 84, 88, 0.65);
+  }
+  .approval-table-container tbody td {
+    padding: 20px;
+  }
+  .approval-table-container tbody select {
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.21) 0%,
+        rgba(0, 0, 0, 0.21) 100%
+      ),
+      rgba(214, 214, 214, 0.01);
+    color: #fff;
+    border: none;
+  }
+  .approval-table-container select option {
+    background: gray;
+    color: #fff;
   }
   .approv-accept {
     background: #1366d9;
