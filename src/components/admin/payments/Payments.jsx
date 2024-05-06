@@ -21,16 +21,11 @@ const Payments = () => {
     }
 
   return (
-    <div>
+    <div className="additional-layer">
         <style>
             {`
-                @media screen and (min-width: 1024px) {
-                    body {
-                      background: #f0f1f3;
-                    }
-                }
                 .payments-type-btn button {
-                    background-color: ${selectedButton ? '#9FC2F3' : '#1366d9'};
+                    color: ${selectedButton ? '#585454' : 'rgba(255, 255, 255, 0.96)'};
                 }
             `}
         </style>
@@ -40,10 +35,10 @@ const Payments = () => {
         </div >
         <div className="payments-type">
             <div className="payments-type-btn">
-                <button style={{ backgroundColor: selectedButton === 'Part Payments' ? '#1366d9' : '' }} onClick={() => handleButtonClick('Part Payments')}>Part-Payments</button>
+                <button style={{ color: selectedButton === 'Part Payments' ? 'rgba(255, 255, 255, 0.96)' : '' }} onClick={() => handleButtonClick('Part Payments')}>Part-Payments</button>
             </div>
             <div className="payments-type-btn">
-                <button style={{ backgroundColor: selectedButton === 'Blocked' ? '#1366d9' : '' }} onClick={() => handleButtonClick('Blocked')}>Blocked</button>
+                <button style={{ color: selectedButton === 'Blocked' ? 'rgba(255, 255, 255, 0.96)' : '' }} onClick={() => handleButtonClick('Blocked')}>Blocked</button>
             </div>
         </div>
         {selectedButton === 'Part Payments' && <PartPaymentsTable />}

@@ -5,10 +5,16 @@
 }
 
 .payments-type-btn button {
-  background: #1366d9;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.21) 0%,
+      rgba(0, 0, 0, 0.21) 100%
+    ),
+    rgba(214, 214, 214, 0.01);
+  background-blend-mode: luminosity, color-burn;
   color: #fff;
-  border: none;
-  border-radius: 4px;
   padding: 10px 0;
   font-size: 14px;
   font-weight: 500;

@@ -6,10 +6,16 @@
 }
 
 .com-type-btn button {
-  background: #1366d9;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.21) 0%,
+      rgba(0, 0, 0, 0.21) 100%
+    ),
+    rgba(214, 214, 214, 0.01);
+  background-blend-mode: luminosity, color-burn;
   color: #fff;
-  border: none;
-  border-radius: 4px;
   padding: 10px 0;
   font-size: 14px;
   font-weight: 500;
@@ -34,10 +40,6 @@
 .val-table-container table {
   width: 100%;
   border-collapse: collapse;
-}
-
-.val-table-container tbody tr {
-  border-top: 20px solid #fff;
 }
 
 .val-table-container .drop-table-container tr {
@@ -111,17 +113,30 @@
     margin: 40px 20px 0 300px;
   }
   .val-table-container thead tr {
-    background: #1366d9;
+    border-radius: 8px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.21) 0%,
+        rgba(0, 0, 0, 0.21) 100%
+      ),
+      rgba(214, 214, 214, 0.01);
+    background-blend-mode: luminosity, color-burn;
+    box-shadow: 0.49px 0px 0px 0px rgba(84, 84, 88, 0.65);
   }
   .val-table-container thead th {
     color: #fff;
+    font-size: 16px;
+    padding: 25px;
   }
-  .val-table-container thead th,
   .val-table-container tbody td {
     font-size: 16px;
+    padding: 20px;
   }
   .val-table-container tbody tr {
-    border-top: 20px solid #f0f1f3;
+    border-radius: 0px 8px 8px 0px;
+    background: rgba(255, 255, 255, 0.15);
+    background-blend-mode: luminosity;
+    box-shadow: 0.49px 0px 0px 0px rgba(84, 84, 88, 0.65);
   }
   .val-table-container .drop-table-container thead tr {
     background: #d9d9d9;

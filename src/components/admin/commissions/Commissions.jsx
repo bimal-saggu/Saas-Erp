@@ -56,18 +56,13 @@ const Commissions = () => {
   };
 
   return (
-    <div>
+    <div className="additional-layer">
       <style>
         {`
-                @media screen and (min-width: 1024px) {
-                    body {
-                      background: #f0f1f3;
-                    }
-                }
-                .com-type-btn button {
-                    background-color: ${selectedButton ? "#9FC2F3" : "#1366d9"};
-                }
-            `}
+          .com-type-btn button {
+            color: ${selectedButton ? "#585454" : "rgba(255, 255, 255, 0.96)"};
+          }
+        `}
       </style>
       <Loader />
       <div className="mob-nav">
@@ -81,7 +76,7 @@ const Commissions = () => {
           <button
             className="valid"
             style={{
-              backgroundColor: selectedButton === "Validation" ? "#1366d9" : "",
+              color: selectedButton === "Validation" ? "rgba(255, 255, 255, 0.96)" : "",
             }}
             onClick={() => handleButtonClick("Validation")}
           >
@@ -92,7 +87,7 @@ const Commissions = () => {
           <button
             className="sold"
             style={{
-              backgroundColor: selectedButton === "Sold" ? "#1366d9" : "",
+              color: selectedButton === "Sold" ? "rgba(255, 255, 255, 0.96)" : "",
             }}
             onClick={() => handleButtonClick("Sold")}
           >
@@ -103,8 +98,8 @@ const Commissions = () => {
           <button
             className="cp"
             style={{
-              backgroundColor:
-                selectedButton === "Cp Commission" ? "#1366d9" : "",
+              color:
+                selectedButton === "Cp Commission" ? "rgba(255, 255, 255, 0.96)" : "",
             }}
             onClick={() => handleButtonClick("Cp Commission")}
           >

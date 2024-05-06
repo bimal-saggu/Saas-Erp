@@ -23,18 +23,13 @@ const Expenses = () => {
   };
 
   return (
-    <div>
+    <div className="additional-layer">
       <style>
         {`
-                @media screen and (min-width: 1024px) {
-                    body {
-                      background: #f0f1f3;
-                    }
-                }
-                .expense-type-btn button {
-                    background-color: ${selectedButton ? "#9FC2F3" : "#1366d9"};
-                }
-            `}
+          .expense-type-btn button {
+            color: ${selectedButton ? "#585454" : "rgba(255, 255, 255, 0.96)"};
+          }
+        `}
       </style>
       <div className="mob-nav">
         <a href="">
@@ -47,8 +42,8 @@ const Expenses = () => {
           <div className="expense-type-btn">
             <button
               style={{
-                backgroundColor:
-                  selectedButton === "Commission" ? "#1366d9" : "",
+                color:
+                  selectedButton === "Commission" ? "rgba(255, 255, 255, 0.96)" : "",
               }}
               onClick={() => handleButtonClick("Commission")}
             >
@@ -58,7 +53,7 @@ const Expenses = () => {
           <div className="expense-type-btn">
             <button
               style={{
-                backgroundColor: selectedButton === "Salary" ? "#1366d9" : "",
+                color: selectedButton === "Salary" ? "rgba(255, 255, 255, 0.96)" : "",
               }}
               onClick={() => handleButtonClick("Salary")}
             >
@@ -68,8 +63,8 @@ const Expenses = () => {
           <div className="expense-type-btn">
             <button
               style={{
-                backgroundColor:
-                  selectedButton === "Miscellaneous" ? "#1366d9" : "",
+                color:
+                  selectedButton === "Miscellaneous" ? "rgba(255, 255, 255, 0.96)" : "",
               }}
               onClick={() => handleButtonClick("Miscellaneous")}
             >
@@ -81,7 +76,7 @@ const Expenses = () => {
           <div className="ex-export-sec">
             <div className="cp-export">
               <img src={leadExport} alt="" />
-              <p>Export</p>
+              <p style={{color: "#fff"}}>Export</p>
             </div>
           </div>
         ) : null}

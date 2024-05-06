@@ -154,9 +154,9 @@ const CpCommissionTable = ({ cp }) => {
                 key={index}
                 onClick={() => handleRowClick(data.channel_partner_id)}
               >
-                <td>{SNO++}</td>
+                <td>{index + 1}</td>
                 <td>{data.channel_partner_id}</td>
-                <td>{data.sales_person_name}</td>
+                <td>{data.channel_partner_name}</td>
               </tr>
               {renderDropdown(data.channel_partner_id)}
             </React.Fragment>

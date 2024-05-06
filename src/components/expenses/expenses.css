@@ -9,10 +9,16 @@
 }
 
 .expense-type-btn button {
-  background: #1366d9;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.21) 0%,
+      rgba(0, 0, 0, 0.21) 100%
+    ),
+    rgba(214, 214, 214, 0.01);
+  background-blend-mode: luminosity, color-burn;
   color: #fff;
-  border: none;
-  border-radius: 4px;
   padding: 10px 0;
   font-size: 14px;
   font-weight: 500;
@@ -29,10 +35,6 @@
 .com-table-container table {
   width: 100%;
   border-collapse: collapse;
-}
-
-.com-table-container tbody tr {
-  border-top: 20px solid #fff;
 }
 
 .com-table-container .drop-table-container tr {
@@ -56,10 +58,6 @@
   border-collapse: collapse;
 }
 
-.salary-table-container tbody tr {
-  border-top: 20px solid #fff;
-}
-
 .ex-export-sec {
   display: none;
 }
@@ -73,10 +71,6 @@
 .miscel-table-container table {
   width: 100%;
   border-collapse: collapse;
-}
-
-.miscel-table-container tbody tr {
-  border-top: 20px solid #fff;
 }
 
 /* Responsive */
@@ -105,21 +99,44 @@
   }
 
   /* Commission Table */
-  .com-table-container {
+  .com-table-container,
+  .salary-table-container,
+  .miscel-table-container {
     margin: 40px 20px 0 300px;
   }
-  .com-table-container thead tr {
-    background: #1366d9;
+  .com-table-container thead tr,
+  .salary-table-container thead tr,
+  .miscel-table-container thead tr {
+    border-radius: 8px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.21) 0%,
+        rgba(0, 0, 0, 0.21) 100%
+      ),
+      rgba(214, 214, 214, 0.01);
+    background-blend-mode: luminosity, color-burn;
+    box-shadow: 0.49px 0px 0px 0px rgba(84, 84, 88, 0.65);
   }
-  .com-table-container thead th {
+  .com-table-container thead th,
+  .salary-table-container thead th,
+  .miscel-table-container thead th {
     color: #fff;
     font-size: 16px;
+    padding: 25px;
   }
-  .com-table-container tbody td {
+  .com-table-container tbody tr,
+  .salary-table-container tbody tr,
+  .miscel-table-container tbody tr {
+    border-radius: 0px 8px 8px 0px;
+    background: rgba(255, 255, 255, 0.15);
+    background-blend-mode: luminosity;
+    box-shadow: 0.49px 0px 0px 0px rgba(84, 84, 88, 0.65);
+  }
+  .com-table-container tbody td,
+  .salary-table-container tbody td,
+  .miscel-table-container tbody td {
     font-size: 16px;
-  }
-  .com-table-container tbody tr {
-    border-top: 20px solid #f0f1f3;
+    padding: 20px;
   }
   .row-down img {
     width: 20px;
@@ -135,38 +152,4 @@
   }
 
   /* Salary Table */
-  .salary-table-container {
-    margin: 40px 20px 0 300px;
-  }
-  .salary-table-container thead tr {
-    background: #1366d9;
-  }
-  .salary-table-container thead th {
-    color: #fff;
-    font-size: 16px;
-  }
-  .salary-table-container tbody td {
-    font-size: 16px;
-  }
-  .salary-table-container tbody tr {
-    border-top: 20px solid #f0f1f3;
-  }
-
-  /* Miscellaneous Table */
-  .miscel-table-container {
-    margin: 40px 20px 0 300px;
-  }
-  .miscel-table-container thead tr {
-    background: #1366d9;
-  }
-  .miscel-table-container thead th {
-    color: #fff;
-    font-size: 16px;
-  }
-  .miscel-table-container tbody td {
-    font-size: 16px;
-  }
-  .miscel-table-container tbody tr {
-    border-top: 20px solid #f0f1f3;
-  }
 }
