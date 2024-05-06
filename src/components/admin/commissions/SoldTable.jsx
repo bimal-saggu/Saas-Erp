@@ -163,7 +163,9 @@ const SoldTable = ({ sold }) => {
             </React.Fragment>
           ))}
         </tbody>
-      </table>) : loader == false ? ("No data to show")
+      </table>) : loader == false ? (
+        <div style={{color: "#fff"}}>No data to show</div>
+      )
       : ("")}
       {selectedSalesPersonId && (
         <SoldCard

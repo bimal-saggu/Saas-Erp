@@ -162,7 +162,9 @@ const CpCommissionTable = ({ cp }) => {
             </React.Fragment>
           ))}
         </tbody>
-      </table>) : loader == false ? ("No data to show") :
+      </table>) : loader == false ? (
+        <div style={{color: "#fff"}}>No data to show</div>
+      ) :
       ("")}
       {selectedChannelPartnerId && (
         <CpCommissionCard
