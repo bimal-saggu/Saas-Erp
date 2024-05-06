@@ -58,7 +58,7 @@ const SalaryTable = () => {
         </tbody>
       </table>
     </div>) : loader == false ? (
-      "No data to show"
+      <div style={{color: "#fff", marginLeft: "320px", marginTop: "20px"}}>No data to show</div>
       ) : (
         ""
       )}
