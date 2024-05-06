@@ -16,6 +16,15 @@ body {
     no-repeat;
 }
 
+/* Background Image Blur  */
+.additional-layer {
+  border: 0.999px solid rgba(255, 255, 255, 0.4);
+  background: rgba(77, 72, 72, 0.4);
+  background-blend-mode: luminosity;
+  backdrop-filter: blur(49.96410369873047px);
+  height: 100vh;
+}
+
 .log {
   width: 450px;
   border-radius: 29px;

@@ -76,7 +76,7 @@ const DeletedPartpaymentProjectsTable = () => {
             </tbody>
           </table>
         </div>
-        ) : loader == false ? (<div className="part-pay-del">No data to show in Deleted Projects</div>) : 
+        ) : loader == false ? (<div className="part-pay-del" style={{color: "#fff"}}>No data to show in Deleted Projects</div>) : 
         ("")}
       </div>
     </div>

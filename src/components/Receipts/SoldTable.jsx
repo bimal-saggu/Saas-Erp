@@ -209,7 +209,7 @@ const SoldTable = () => {
 
   const renderDropdown = () => {
       return (
-        <tr className="dropdown" style={{ backgroundColor: "#D9D9D9" }}>
+        <tr className="dropdown">
           <td colSpan="5">
             <div className="drop-sec">
               <div className="drop-head">
@@ -301,7 +301,7 @@ const SoldTable = () => {
                   ))}
                 </tbody>
               </table>
-              ) : loader == false ? ("No data to show in sold") :
+              ) : loader == false ? (<div style={{color: "#fff"}}>No data to show in sold</div>) :
                 ("")}
             </div>
           )}

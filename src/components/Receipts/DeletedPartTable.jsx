@@ -190,7 +190,7 @@ const DeletedPartTable = () => {
             </tbody>
           </table>
         </div>
-        ) : loader == false ? (<div className="part-pay-del">No data to show in Deleted Part-payments</div>) : 
+        ) : loader == false ? (<div className="part-pay-del" style={{color: "#fff"}}>No data to show in Deleted Part-payments</div>) : 
         ("")}
       </div>
       {selectedReceiptData && (

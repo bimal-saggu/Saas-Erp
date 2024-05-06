@@ -319,7 +319,7 @@ const PartSoldTable = () => {
               </table>
             )}
           </div>
-          ) : loader == false ? ("No data to show in part payments") : (
+          ) : loader == false ? (<div style={{color: "#fff"}}>No data to show in part payments</div>) : (
           "" )}
         </div>
         {selectedOption === "Deleted Part Payment" && <DeletedPartTable />}

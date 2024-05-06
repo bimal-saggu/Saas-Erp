@@ -95,7 +95,7 @@ const DeletedReceiptsTable = () => {
               </table>
             </div>
           ) : loader == false ? (
-            "No data to show"
+            <div style={{color: "#fff"}}>No data to show</div>
           ) : (
             ""
           )}

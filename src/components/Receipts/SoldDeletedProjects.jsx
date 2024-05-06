@@ -191,7 +191,7 @@ const SoldDeletedProjects = () => {
               ))}
             </tbody>
           </table>
-        </div>) : loader == false ? (<div className="sold-receipts-table-container">No data to show in deleted sold projects</div>) : 
+        </div>) : loader == false ? (<div className="sold-receipts-table-container" style={{color: "#fff"}}>No data to show in deleted sold projects</div>) : 
         ("")}
       </div>
       {selectedReceiptData && (

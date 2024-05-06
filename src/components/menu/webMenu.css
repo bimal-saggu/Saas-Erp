@@ -88,6 +88,10 @@
   color: #c2c2c2;
 }
 
+.logout {
+  margin-bottom: 0;
+}
+
 @media screen and (max-width: 1023px) {
   .menu {
     display: none;

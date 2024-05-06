@@ -28,18 +28,13 @@ const PendingReceipts = () => {
   };
 
   return (
-    <div>
+    <div className="additional-layer">
       <style>
         {`
-                @media screen and (min-width: 1024px) {
-                    body {
-                      background: #f0f1f3;
-                    }
-                }
-                .receipt-type-btn button {
-                    background-color: ${status ? "#9FC2F3" : "#1366d9"};
-                }
-            `}
+          .receipt-type-btn button {
+            color: ${status ? '#585454' : 'rgba(255, 255, 255, 0.96)'};
+          }
+        `}
       </style>
       <div className="mob-nav">
         <a href="">
@@ -50,7 +45,7 @@ const PendingReceipts = () => {
       <div className="receipt-type">
         <div className="receipt-type-btn">
           <button
-            style={{ backgroundColor: status === "Pending" ? "#1366d9" : "" }}
+            style={{ color: status === "Pending" ? "rgba(255, 255, 255, 0.96)" : "" }}
             onClick={() => handleStatusChange("Pending")}
           >
             Pending
@@ -59,7 +54,7 @@ const PendingReceipts = () => {
         <div className="receipt-type-btn">
           <button
             style={{
-              backgroundColor: status === "Part-Payment" ? "#1366d9" : "",
+              color: status === "Part-Payment" ? "rgba(255, 255, 255, 0.96)" : "",
             }}
             onClick={() => handleStatusChange("Part-Payment")}
           >
@@ -68,7 +63,7 @@ const PendingReceipts = () => {
         </div>
         <div className="receipt-type-btn">
           <button
-            style={{ backgroundColor: status === "Sold" ? "#1366d9" : "" }}
+            style={{ color: status === "Sold" ? "rgba(255, 255, 255, 0.96)" : "" }}
             onClick={() => handleStatusChange("Sold")}
           >
             Sold

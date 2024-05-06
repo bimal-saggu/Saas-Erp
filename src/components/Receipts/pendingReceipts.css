@@ -5,13 +5,20 @@
 }
 
 .receipt-type-btn button {
-  background: #1366d9;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.21) 0%,
+      rgba(0, 0, 0, 0.21) 100%
+    ),
+    rgba(214, 214, 214, 0.01);
+  background-blend-mode: luminosity, color-burn;
   color: #fff;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
   border-radius: 5px;
-  border: none;
   padding: 10px 0;
   width: 95px;
 }
@@ -35,9 +42,9 @@
   border-collapse: collapse;
 }
 
-.receipts-table-container tbody tr {
+/* .receipts-table-container tbody tr {
   border-top: 20px solid #fff;
-}
+} */
 
 .table-headings p {
   color: #fff;
@@ -220,10 +227,19 @@
   border: none !important;
 }
 
-.drop-sec,
 .dropdown td,
-.drop-table-container thead tr {
-  background: #d9d9d9;
+.drop-sec,
+.drop-table-container thead th,
+.drop-table-container tbody td {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.21) 0%,
+      rgba(0, 0, 0, 0.21) 100%
+    ),
+    rgba(214, 214, 214, 0.01);
+  background-blend-mode: luminosity, color-burn;
+  /* box-shadow: 0.49px 0px 0px 0px rgba(84, 84, 88, 0.65); */
+  border-radius: 0 !important ;
 }
 
 /* .drop-table-container thead tr {
@@ -326,17 +342,30 @@
     margin: 0 0 0 0;
   }
   .receipts-table-container thead tr {
-    background: #1366d9;
+    border-radius: 8px;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.21) 0%,
+        rgba(0, 0, 0, 0.21) 100%
+      ),
+      rgba(214, 214, 214, 0.01);
+    background-blend-mode: luminosity, color-burn;
+    box-shadow: 0.49px 0px 0px 0px rgba(84, 84, 88, 0.65);
+  }
+  .receipts-table-container tbody tr {
+    border-radius: 0px 8px 8px 0px;
+    background: rgba(255, 255, 255, 0.15);
+    background-blend-mode: luminosity;
+    box-shadow: 0.49px 0px 0px 0px rgba(84, 84, 88, 0.65);
   }
   .receipts-table-container thead th {
     color: #fff;
     font-size: 16px;
-  }
-  .receipts-table-container tbody tr {
-    border-top: 20px solid #f0f1f3;
+    padding: 25px;
   }
   .receipts-table-container tbody td {
     font-size: 16px;
+    padding: 20px;
   }
   .res-del-rec h2 {
     font-size: 24px;
@@ -372,10 +401,16 @@
   .part-select {
     font-size: 24px;
     font-weight: 500;
-    background: #f0f1f3;
-    color: #f55959;
-    border: none;
     border-radius: 5px;
+    border: 1px solid #fff;
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.21) 0%,
+        rgba(0, 0, 0, 0.21) 100%
+      ),
+      rgba(214, 214, 214, 0.01);
+    background-blend-mode: luminosity, color-burn;
+    color: #fff;
     cursor: pointer;
     outline: none;
   }
